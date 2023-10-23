@@ -147,7 +147,7 @@ section.product_cont .row { margin-bottom: 24px; }
     width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 #main_wrap header .nav3.active { position: fixed; top: 70px; background: #fff; }  
 #main_wrap header .nav3 ul.main-menu {
@@ -677,9 +677,10 @@ input[id="check1"]:checked + label::after{
 
 /* mypage_wrap */
 .mypage_wrap .cont {
-    /* width: 100%; */
-    /* max-width: 930px; */
+    width: 100%;
+    max-width: 930px;
     /* margin: 0 auto; */
+    min-width: 100px;
 }
 /* .mypage_wrap .cont2 { max-width: 930px; width: 100%; } */
 .mypage_wrap .join-list-wrap .title { width: 100px; }
@@ -746,11 +747,16 @@ input[id="check1"]:checked + label::after{
 .mypage_main_wrap .tab a { 
     background: #F3F3F3;
     color: #000;
+    padding: 12px 0;
+    font-size: 14px;
 }
 .mypage_main_wrap .tab a.active { 
     background: #000;
     color: #fff;
 }
+.mypage_main_wrap .tab2 a { font-size: 12px; color: #000; padding: 10px 6px; }
+.mypage_main_wrap .input-wrap input { font-size: 12px; }
+.mypage_main_wrap .input-wrap button { font-size: 12px; }
 .mypage_main_wrap .cont-wrap aside {
     width: 204px !important;
     min-width: 204px !important;

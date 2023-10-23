@@ -514,9 +514,9 @@
       <div class="cont">
           
           <!-- 문의 -->
-          <div class="px-3">
+          <div class="px-0 px-md-3">
             <div class="d-flex align-items-end mb-2">
-              <h3 class="fs-20 text-main fw-bold">주문/배송 현황</h3>
+              <h3 class="fs-20 text-main fw-bold px-2 px-md-0">주문/배송 현황</h3>
              <span class="fs-12 text-muted ms-2">최근 3개월 이내의 내역만 보여집니다.</span>
             </div>
             <div class="mypage_status_view">
@@ -544,33 +544,34 @@
               </ul>
             </div>
             <div class="d-flex align-items-end mb-2 mt-4">
-              <h3 class="fs-20 text-main fw-bold">주문/배송 내역</h3>
+              <h3 class="fs-20 text-main fw-bold px-2 px-md-0">주문/배송 내역</h3>
              <span class="fs-12 text-muted ms-2">최근 3개월 이내의 내역만 보여집니다.</span>
             </div>
             <!-- tab -->
             <div class="col-lg-12 px-0">
-              <div class="tab d-flex justify-content-between text-center" id="sidebar-1" role="tablist">
-                <a class="flex-grow-1 py-1 active" data-toggle="tab" href="#sidebar-1-1" role="tab"  aria-controls="sidebar-1" aria-selected="false">전체내역</a>
-                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-2" role="tab" aria-controls="sidebar-1-2" aria-selected="false">주문내역</a>
-                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-3" role="tab" aria-controls="sidebar-1-3" aria-selected="false">샘플 요청 내역</a>
-                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="true">공동구매 내역</a>
+              <div class="tab d-flex justify-content-between text-center border-bottom" id="sidebar-1" role="tablist">
+                <a class="flex-grow-1 active" data-toggle="tab" href="#sidebar-1-1" role="tab"  aria-controls="sidebar-1" aria-selected="false">전체내역</a>
+                <a class="flex-grow-1" data-toggle="tab" href="#sidebar-1-2" role="tab" aria-controls="sidebar-1-2" aria-selected="false">주문내역</a>
+                <a class="flex-grow-1" data-toggle="tab" href="#sidebar-1-3" role="tab" aria-controls="sidebar-1-3" aria-selected="false">샘플 요청 내역</a>
+                <a class="flex-grow-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="true">공동구매 내역</a>
               </div>
             </div>
             <!-- / tab -->
-            <div>
+            <div class="d-flex justify-content-between mt-1">
               <div class="tab2 d-flex text-center" id="sidebar-1" role="tablist">
-                <a class="py-1 active" data-toggle="tab" href="#" role="tab"  aria-controls="sidebar-1" aria-selected="false">전체내역</a>
-                <a class="py-1" data-toggle="tab" href="#">1주일</a>
-                <a class="py-1" data-toggle="tab" href="#">1개월</a>
-                <a class="py-1" data-toggle="tab" href="#">3개월</a>
-                <a class="py-1" data-toggle="tab" href="#">6개월</a>
-                <a class="py-1" data-toggle="tab" href="#">1년</a>
+                 <a class="d-flex align-items-center active border" data-toggle="tab" href="#" role="tab" aria-controls="sidebar-1" aria-selected="false">전체내역</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1주일</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">3개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">6개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1년</a>
               </div>
-              <div>
-
+              <div class="d-flex input-wrap">
+                <input type="date" class="border px-1">
+                <button type="button" class="btn-main text-white bg-01 px-1">검색</button>
               </div>
             </div>
-            <div class="mypage-table-wrap1 p-0 mt-7 mb-10">
+            <div class="mypage-table-wrap1 p-0 mt-3 mb-10">
               
               <div class="thead d-flex align-items-center justify-content-between border-top3 border-bottom2 px-0 py-1">
                 <div class="title flex-grow-1">
@@ -875,7 +876,36 @@
       </div>
     </div>
   </div>
-
+  <nav class="footer_nav" id="footer_nav">
+    <div class="inner px-2 py-1">
+      <ul class="d-flex justify-content-between">
+        <li class="active">
+          <a class="btn_footer btn_home" href="index.html">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn_footer btn_category" href="javascript:void(0)">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">CATEGORY</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn_footer btn_search" href="javascript:void(0)">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">SEARCH</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn_footer btn_mypage" href="mypage_main.html">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">MYPAGE</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
     <!-- footer -->
     <footer class=" py-0">
       <!-- <div class="container"> -->

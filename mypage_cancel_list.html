@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/custom.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/sharple.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
     <!-- slick css -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
@@ -529,22 +530,23 @@
               </div>
             </div>
             <!-- / tab -->
-            <div>
+            <div class="tab2-wrap d-flex justify-content-between mt-1">
               <div class="tab2 d-flex text-center" id="sidebar-1" role="tablist">
-                <a class="py-1 active" data-toggle="tab" href="#" role="tab"  aria-controls="sidebar-1" aria-selected="false">전체내역</a>
-                <a class="py-1" data-toggle="tab" href="#">1주일</a>
-                <a class="py-1" data-toggle="tab" href="#">1개월</a>
-                <a class="py-1" data-toggle="tab" href="#">3개월</a>
-                <a class="py-1" data-toggle="tab" href="#">6개월</a>
-                <a class="py-1" data-toggle="tab" href="#">1년</a>
+                 <a class="d-flex align-items-center active border" data-toggle="tab" href="#" role="tab" aria-controls="sidebar-1" aria-selected="false">전체내역</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1주일</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">3개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">6개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1년</a>
               </div>
-              <div>
-
+              <div class="d-flex input-wrap">
+                <input type="date" class="border px-1">
+                <button type="button" class="btn-main text-white bg-01 px-1">검색</button>
               </div>
             </div>
-            <div class="mypage-table-wrap3 p-0 mt-7 mb-10">
+            <div class="mypage-table-wrap3 p-0 mt-3 mb-2">
               
-              <div class="thead d-flex align-items-center justify-content-between border-top3 border-bottom2 px-0 py-1">
+              <div class="thead d-md-flex d-none align-items-center justify-content-between border-top3 px-0 py-1">
                 <div class="title flex-grow-1">
                   <h5 class="fs-12 text-main fw-bold text-center">상품정보</h5>
                 </div>
@@ -555,14 +557,14 @@
                   <h5 class="fs-12 text-main fw-bold text-center">진행상태</h5>
                 </div>
               </div>
-              <div class="thead d-flex align-items-center border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-bottom border-top2 px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -575,24 +577,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -605,24 +607,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -635,24 +637,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -665,24 +667,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -695,24 +697,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -725,24 +727,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -755,24 +757,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-2 d-md-flex d-block align-items-center justify-content-between justify-content-md-start border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
-                    <div class="mypage-product-img-wrap img_75 ms-3 bg-03">
+                    <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
                     <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
@@ -785,22 +787,63 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div>
+                  <div class="amount d-md-flex d-block align-items-center mt-md-0 mt-1">
+                    <div class="text-start text-md-center">
                       <p class="fs-12 text-main">99,999원</p>
                     </div>
-                    <div class="text-center">
-                      <p class="text-main fs-16 fw-bold">환불완료</p>
+                    <div class="text-start text-md-center">
+                      <p class="text-main fs-16 fw-bold">환불 완료</p>
                     </div>
                   </div>
                 </li>
               </ul>
+            </div>
+            <div class="d-flex justify-content-center mb-10">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_prev.png"></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_next.png"></a></li>
+                </ul>
+              </nav>
             </div>
           </div>   <!-- end row 문의 -->    
       </div>
     </div>
   </div>
 
+  <nav class="footer_nav" id="footer_nav">
+    <div class="inner px-2 py-1">
+      <ul class="d-flex justify-content-between">
+        <li class="active">
+          <a class="btn_footer btn_home" href="index.html">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn_footer btn_category" href="javascript:void(0)">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">CATEGORY</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn_footer btn_search" href="javascript:void(0)">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">SEARCH</span>
+          </a>
+        </li>
+        <li>
+          <a class="btn_footer btn_mypage" href="mypage_main.html">
+            <div class="image_icon"></div>
+            <span class="fs-10 text-sub4">MYPAGE</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
     <!-- footer -->
     <footer class=" py-0">
       <!-- <div class="container"> -->

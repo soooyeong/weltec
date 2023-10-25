@@ -1,6 +1,11 @@
 @media (max-width: 1200px) {
 
     .payment_wrap section.cont { max-width: 768px; }
+    .navbar-expand-lg .navbar-nav { margin-top: 0; }
+    .list-wrap .info { width: 165px; }
+    .mypage_main_wrap .cont-wrap .mypage-table-wrap1 .list-wrap li .amount>div:nth-child(2) {
+        /* width: 134px; */
+    }
 }
 @media (max-width: 840px) {
     
@@ -13,6 +18,8 @@
     .mypage_wrap .join-list-wrap .join_alert { margin-left: 0; }
     .mypage_wrap .join-list-wrap input { width: 100%; }
     .mypage_wrap .join-list-wrap input.input2 { width: calc(100% - 100px); }
+
+    .mypage_main_wrap .tab2-wrap { display: none !important; }
     .btn-main { width: 100%; max-width: none; }
     .footer_nav { display: block; z-index: 2; }
     .payment_wrap section.cont {
@@ -82,8 +89,10 @@
         width: auto !important;
     }
     .mypage-table-wrap1 .list-wrap li .amount>div { width: auto !important; }
+    .mypage-table-wrap1 .list-wrap li .amount>div:nth-child(1) { margin-right: 10px; }
 
-    /* detail */
+
+    /* footer */
     footer .cont_wrap { padding: 24px 18px 80px 18px; }
     footer .link ul li { display: flex; align-items: center; }
     footer .link ul li a { 
@@ -102,6 +111,21 @@
     footer .cont_wrap .cont2 { display: block; }
 
 } /* 840px end */
+@media (max-width: 768px) {
+    .list-wrap .btn-wrap button:nth-child(1), .list-wrap .btn-wrap button:nth-child(2) { 
+        border-bottom: 0 !important; 
+        border-right: 1px solid #999 !important; 
+    }
+    .card_list_wrap ul li { float: none; width: 100%; }
+    .card_list_wrap ul li.add-address { height: 44px; }
+    .card_list_wrap ul li:nth-child(2n) { margin-left: 0; }
+    .btn-review { width: 108px; }
+    .card_list_wrap .coupon-wrap li { height: 199px; }
+    .mypage-table-wrap5 .list-wrap li>div:nth-child(2) { width: 100%; }
+    .mypage-table-wrap5 .list-wrap li>div:nth-child(2)>div:nth-child(1) { width: 100%; }
+    .mypage-table-wrap5 .list-wrap li>div:nth-child(2)>div:nth-child(2) { width: 100%; color: #d5d5d5; font-size: 12px; font-weight: normal; margin-top: 12px; }
+
+}
 @media (max-width: 500px) {
     .filter-cont .list-wrap li { width: 49%; }
     .filter-cont .list-wrap li:nth-child(2n) { margin-left: 2%; }

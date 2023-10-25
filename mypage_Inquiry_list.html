@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/custom.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/sharple.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
     <!-- slick css -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
@@ -465,7 +466,7 @@
       </nav>
     </header>
    
-    <div class="cont d-flex justify-content-center mt-10">
+    <div class="cont-wrap d-flex justify-content-center mt-10">
       <aside>
         <div class="profile d-flex align-items-end mb-4">
           <h3 class="fs-20 fw-bold text-main">김샾플</h3>
@@ -521,7 +522,7 @@
             </div>
             <!-- tab -->
             <div class="col-lg-12 px-0">
-              <div class="d-flex justify-content-between">
+              <div class="d-md-flex d-none justify-content-between">
                 <p class="text-main fs-14">
                   고객센터 또는 1:1 문의를 통하여 문의한 내용을 확인하실 수 있습니다.<br>
                   상품상세 또는 판매자 문의는 자주 묻는 질문에서 확인하세요.
@@ -529,9 +530,9 @@
                 <button class="fs-12 text-sub3 bg-05 px-1" type="button">자주 묻는 질문 가기</button>
               </div>
             </div>
-            <div class="mypage-table-wrap5 p-0 mt-2 mb-10">
+            <div class="mypage-table-wrap5 p-0 mt-2 mb-2">
 
-              <div class="thead d-flex align-items-center justify-content-between border-top3 border-bottom px-0 py-1">
+              <div class="thead d-md-flex d-none align-items-center justify-content-between border-top3 border-bottom px-0 py-1">
                 <div class="title">
                   <h5 class="fs-12 text-main fw-bold text-center">유형</h5>
                 </div>
@@ -547,67 +548,108 @@
               </div>
               
               <ul class="list-wrap list-wrap2 px-0 mb-0">
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end">답변대기</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">반품/교환</div>
-                  <div class="flex-grow-1 text-center">제목입니다. 20글자까지 들어갑니다.</div>
-                  <div class="flex-grow-1 text-center fw-bold">2023.06.05</div>
-                  <div class="flex-grow-1 text-center">답변대기</div>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
                 </li>
+                <li class="py-1 px-0 d-flex align-baseline justify-content-between border-bottom fs-14 text-main">
+                  <div class=" text-center d-md-block d-none">반품/교환</div>
+                  <div class="d-md-flex d-block">
+                    <div class="flex-grow-1 text-md-center text-start">제목입니다. 20글자까지 들어갑니다.</div>
+                    <div class="flex-grow-1 text-md-center text-start fw-bold">2023.06.05</div>
+                  </div>
+                  <div class="text-md-center text-end text-sub3">답변완료</div>
+                </li>
+                
+                
               </ul>
+            </div>
+            <div class="d-flex justify-content-center mb-10">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_prev.png"></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_next.png"></a></li>
+                </ul>
+              </nav>
             </div>
           </div>   <!-- end row 문의 -->    
       </div>

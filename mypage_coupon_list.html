@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/custom.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/sharple.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
     <!-- slick css -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
@@ -465,7 +466,7 @@
       </nav>
     </header>
    
-    <div class="cont d-flex justify-content-center mt-10">
+    <div class="cont-wrap d-flex justify-content-center mt-10">
       <aside>
         <div class="profile d-flex align-items-end mb-4">
           <h3 class="fs-20 fw-bold text-main">김샾플</h3>
@@ -517,10 +518,10 @@
           <!-- 문의 -->
           <div class="row px-3">
             <div class="d-flex align-items-end mb-2">
-              <h3 class="fs-20 text-main fw-bold">적립금 내역</h3>
+              <h3 class="fs-20 text-main fw-bold">쿠폰 발급</h3>
             </div>
             <!-- tab -->
-            <div class="col-lg-12 bg-02 py-2 d-flex justify-content-between">
+            <div class="col-lg-12 bg-02 py-2 d-md-flex d-block justify-content-between">
               <div class="tab text-center text-main flex-grow-1">
                 <p class="fs-14"><strong class="fs-24 fw-bold">4</strong>장</p>
                 <span class="fs-14">사용가능한 쿠폰</span>
@@ -530,90 +531,241 @@
                   <input class="input-search flex-grow-1 ps-2 fs-12" type="text" placeholder="쿠폰번호를 입력해주세요.">
                   <button class="btn_04 px-1 text-white fs-12" type="button">등록하기</button>
                 </div>
-                <p class="fs-10 text-sub4 mt-1 text-end">쿠폰K 인증번호를 입력하시면 쿠폰이 발급됩니다.</p>
+                <p class="fs-10 text-sub4 mt-1 text-md-end text-center">쿠폰K 인증번호를 입력하시면 쿠폰이 발급됩니다.</p>
               </div>
             </div>
-            <div class="mypage-table-wrap4 p-0 mt-7 mb-10">
+              <h3 class="fs-20 text-main fw-bold mt-4 px-0">쿠폰 발급 내역</h3>
+              <div class="tab d-flex justify-content-between text-center mt-2 px-0" id="sidebar-1" role="tablist">
+                <a class="flex-grow-1 py-1 active" data-toggle="tab" href="#sidebar-1-1" role="tab"  aria-controls="sidebar-1" aria-selected="false">사용가능 쿠폰</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-2" role="tab" aria-controls="sidebar-1-2" aria-selected="false">전체 쿠폰</a>
+              </div>
+              <div class="mypage-table-wrap3 card_list_wrap p-0 mt-0 mb-2" id="coupon-avaulable">
+                <ul class="mt-1 coupon-wrap" >
+                  <li class="d-md-flex d-block justify-content-between border">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-sub3 fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-md-flex d-block justify-content-between border">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-sub3 fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-md-flex d-block justify-content-between border">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-sub3 fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-md-flex d-block justify-content-between border">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-sub3 fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-              <div class="thead d-flex align-items-center justify-content-between border-top3 border-bottom px-0 py-1">
-                <div class="title flex-grow-1">
-                  <h5 class="fs-12 text-main fw-bold text-center">주문번호</h5>
-                </div>
-                <div class="title flex-grow-1">
-                  <h5 class="fs-12 text-main fw-bold text-center">지급일</h5>
-                </div>
-                <div class="title flex-grow-1">
-                  <h5 class="fs-12 text-main fw-bold text-center">적립금액</h5>
-                </div>
-                <div class="title flex-grow-1">
-                  <h5 class="fs-12 text-main fw-bold text-center">유효일자</h5>
-                </div>
+
+              <div class="mypage-table-wrap3 card_list_wrap p-0 mt-0 mb-2" id="coupon-full">
+                <ul class="mt-1 coupon-wrap" >
+                  <li class="d-md-flex d-block justify-content-between border">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-sub3 fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-md-flex d-block justify-content-between border bg-02">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-muted fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-md-flex d-block justify-content-between border bg-02">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-muted fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-md-flex d-block justify-content-between border">
+                    <div class="w-md-50 w-100 d-flex flex-column justify-content-between">
+                      <div>
+                        <h4 class="text-main fs-14 fw-bold">승급쿠폰</h4>
+                        <h3 class="fs-24 text-sub3 fw-bold">20% 할인</h3>
+                      </div>
+                      <p class="fs-12 text-muted mt8">2023.07.01 23:59까지 사용가능</p>
+                    </div>
+                    <div class="w-md-50 w-100 fs-14 text-main d-flex flex-column gap-2 justify-content-between mt-md-0 mt-3">
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용여부</p>
+                        <span class="fs-10">미사용</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">중복할인</p>
+                        <span class="fs-10">가능</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">사용가능 상품</p>
+                        <span class="fs-10">모든상품(특가 상품 제외)</span>
+                      </div>
+                      <div class="d-flex justify-content-md-start justify-content-between">
+                        <p class="w80 fs-10 fw-bold">최소 결제 금액</p>
+                        <span class="fs-10">제안없음</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              
-              <ul class="list-wrap px-0 mb-0">
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-                <li class="py-1 px-0 d-flex align-items-center justify-content-between border-bottom fs-14 text-main">
-                  <div class="flex-grow-1 text-center">123456D7Y89</div>
-                  <div class="flex-grow-1 text-center">2023.02.03</div>
-                  <div class="flex-grow-1 text-center fw-bold">+500</div>
-                  <div class="flex-grow-1 text-center">2023.06.05</div>
-                </li>
-              </ul>
-            </div>
-          </div>   <!-- end row 문의 -->    
+          </div>   <!-- end row 문의     -->
       </div>
     </div>
   </div>

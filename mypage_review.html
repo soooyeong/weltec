@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/vendor.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
-    <link rel="stylesheet" href="assets/css/custom.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/sharple.css" />
+    <link rel="stylesheet" href="assets/css/custom.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/sharple.css"/>
+    <link rel="stylesheet" href="assets/css/media.css"/>
     <!-- slick css -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
@@ -57,7 +58,7 @@
                 </div>   
                 <div class="cont mt-2">
                   <ul>
-                    <li class="d-flex">
+                    <!-- <li class="d-flex"> -->
                       <div class="img-wrap">
                         <img class="img-produt" src="">
                       </div>
@@ -467,12 +468,12 @@
    
     <div class="cont-wrap d-flex justify-content-center mt-10">
       <aside>
-        <div class="profile d-flex align-items-end mb-4">
-          <h3 class="fs-20 fw-bold text-main">김샾플</h3>
-          <span class="fs-12 text-white bg-04 padding-6 ms-1">VIP</span>
-          <span class="fs-12 text-main ms-1">고객님</span>
-        </div>
-        <div>
+          <div class="profile d-flex align-items-end mb-4">
+            <h3 class="fs-20 fw-bold text-main">김샾플</h3>
+            <span class="fs-12 text-white bg-04 padding-6 ms-1">VIP</span>
+            <span class="fs-12 text-main ms-1">고객님</span>
+          </div>
+          <div>
           
           <h4 class="fs-14 fw-bold text-main mb-1">주문관리</h4>
           <ul>
@@ -527,33 +528,34 @@
               </div>
             </div>
             <!-- / tab -->
-            <div>
+            <div class="tab2-wrap d-flex justify-content-between mt-1">
               <div class="tab2 d-flex text-center" id="sidebar-1" role="tablist">
-                <a class="py-1 active" data-toggle="tab" href="#" role="tab"  aria-controls="sidebar-1" aria-selected="false">전체내역</a>
-                <a class="py-1" data-toggle="tab" href="#">1주일</a>
-                <a class="py-1" data-toggle="tab" href="#">1개월</a>
-                <a class="py-1" data-toggle="tab" href="#">3개월</a>
-                <a class="py-1" data-toggle="tab" href="#">6개월</a>
-                <a class="py-1" data-toggle="tab" href="#">1년</a>
+                 <a class="d-flex align-items-center active border" data-toggle="tab" href="#" role="tab" aria-controls="sidebar-1" aria-selected="false">전체내역</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1주일</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">3개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">6개월</a>
+                <a class="d-flex align-items-center  border" data-toggle="tab" href="#">1년</a>
               </div>
-              <div>
-
+              <div class="d-flex input-wrap">
+                <input type="date" class="border px-1">
+                <button type="button" class="btn-main text-white bg-01 px-1">검색</button>
               </div>
             </div>
             <!-- tab1 -->
-            <div class="mypage-table-wrap1 p-0 mt-7 mb-10">
+            <div class="mypage-table-wrap1 p-0 mt-3 mb-10">
              
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-bottom border-top2 px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -566,24 +568,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                      <button class="btn-review w80 d-block fs-10 text-white bg-01 padding-8" type="button">상품평작성</button>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -596,24 +596,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                    <button class="btn-review w80 d-block fs-10 text-muted bg-02 padding-8" type="button">작성완료</button>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -626,24 +624,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                    <button class="btn-review w80 d-block fs-10 text-white bg-01 padding-8" type="button">상품평작성</button>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -656,24 +652,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                    <button class="btn-review w80 d-block fs-10 text-white bg-01 padding-8" type="button">상품평작성</button>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -686,24 +680,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                    <button class="btn-review w80 d-block fs-10 text-white bg-01 padding-8" type="button">상품평작성</button>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -716,24 +708,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                    <button class="btn-review w80 d-block fs-10 text-white bg-01 padding-8" type="button">상품평작성</button>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -746,24 +736,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                    <button class="btn-review w80 d-block fs-10 text-white bg-01 padding-8" type="button">상품평작성</button>
                   </div>
                 </li>
               </ul>
-              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1">
+              <div class="thead d-flex align-items-center border-top2 border-bottom px-0 py-1 justify-content-md-start justify-content-between">
                 <h5 class="text-main fs-12 fw-bold me-5">2023.08.30</h5>
                 <span class="text-main fs-12">주문번호 <strong class="text-main fs-12 ps-1">123456789321</strong></span>
               </div>
               <ul class="list-wrap px-0 mb-0">
-                <li class="py-2 px-0 d-flex align-items-center justify-content-between border-bottom">
+                <li class="py-2 px-0 d-md-flex d-block align-items-center justify-content-between border-bottom">
                   <div class="d-flex align-items-center flex-grow-1">
                     <div class="mypage-product-img-wrap img_75 bg-03">
                       <img class="img_75" src="assets/images/product_hover.jpg">
                     </div>
-                    <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                    <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                       <div>
                           <span class="text-main fs-12">공동구매</span>
                       </div>
@@ -776,14 +764,24 @@
                       </div>
                     </div>
                   </div>
-                  <div class="amount d-flex align-items-center">
-                    <div class="d-flex flex-column justify-content-between">
-                      <button class="w80 d-block fs-10 text-muted bg-02 padding-8 m-auto" type="button">반품신청</button>
-                    </div>
+                  <div class="mt-md-0 mt-2">
+                    <button class="btn-review w80 d-block fs-10 text-white bg-01 padding-8" type="button">상품평작성</button>
                   </div>
                 </li>
               </ul>
+              <div class="d-flex justify-content-center mt-2">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_prev.png"></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_next.png"></a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
+           
             <!-- tab2 -->
             <div class="mypage-table-wrap1 p-0 mt-7 mb-10">
               <ul class="list-wrap px-0 mb-0 border-top3">
@@ -793,7 +791,7 @@
                       <div class="mypage-product-img-wrap img_75 bg-03">
                         <img class="img_75" src="assets/images/product_hover.jpg">
                       </div>
-                      <div class="info ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
+                      <div class="ms-3 d-flex flex-column justify-content-between " style="height: 75px;">
                         <div>
                             <span class="text-main fs-12">공동구매</span>
                         </div>

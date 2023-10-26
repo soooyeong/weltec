@@ -11,38 +11,35 @@
     <link rel="stylesheet" href="assets/css/custom.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/sharple.css" />
-    <!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/media.css" />
     <!-- favicon -->
     <link rel="icon" href="assets/images/icon/favi.png" type="image/x-icon">
     <link rel="icon" href="assets/images/icon/favi.png" type="image/png">
     <!-- jquery js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <!-- scroll js -->
-    <script src="assets/js/scroll.js"></script>
-    <!-- slick js -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>샾플</title>
   </head>
   <body>
 
   <div id="main_wrap" class="sub_wrap payment_wrap">
+
     <!-- header -->
-    <header class="header">
+    <header class="header header_web" id="header">
       <div class="container">
         <div class="row position-relative">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <a href="index.html" class="logo order-1 order-lg-2"><img src="assets/images/logo.png" alt="Logo"></a>
+          <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+            
             <!-- <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button> -->
-            <div class="input_wrap collapse navbar-collapse order-3 order-lg-1">
+            <div class="input_wrap">
               <input class="input-search" type="text" placeholder="검색하기">
             </div>
-            <div class="collapse navbar-collapse order-4 order-lg-3" id="navbarMenu2">
-              <ul class="navbar-nav ml-auto">
+
+            <a href="index.html" class="logo "><img src="assets/images/logo.png" alt="Logo"></a>
+            
+            <div class="" id="navbarMenu2">
+              <ul class="d-flex mb-0">
                 <li class="nav-item">
                   <a href="#">마이페이지</a>
                 </li>
@@ -55,8 +52,8 @@
               </ul>
               <div class="view-modal p-2 border border-top-0">
                 <div class="d-flex justify-content-between">
-                   <h4 class="fs-12 text-main fw-bold">최근 본 상품</h4>
-                   <button class="btn-view-close" type="button"><img class="icon_01" src="assets/images/icon/icon_close.png"></button>
+                    <h4 class="fs-12 text-main fw-bold">최근 본 상품</h4>
+                    <button class="btn-view-close" type="button"><img class="icon_01" src="assets/images/icon/icon_close.png"></button>
                 </div>   
                 <div class="cont mt-2">
                   <ul>
@@ -122,281 +119,14 @@
                     </li>
                   </ul>
                 </div>            
-             </div>
-            </div>
-          </nav>
-          <nav class="nav-filter">
-            <div class="row d-flex justify-content-between flex-direction-start"> 
-              <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Logo"></a>
-              
-              <button class="btn-filter-close" type="button"></button>
-            </div>
-            <div class="filter-cont">
-              <div class="input_wrap d-flex gap-0 mb-2">
-                <input class="input-search" type="text" placeholder="검색하기">
-                <button class="btn-primary px-2" type="button">검색하기</button>
               </div>
-                <div class="filter-wrap">
-                  <h3 class="fs-14 text-sub1">세부필터</h4>
-                  <div class="py-1 border-bottom">
-                    <h4 class="fs-14 text-sub1">용도별</h4>
-                    <ul class="list-wrap">
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">코트/자켓</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check2">
-                        <label for="check2"></label>
-                        <span class="ms-2 fs-14 text-main">점퍼/패딩</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check3">
-                        <label for="check3"></label>
-                        <span class="ms-2 fs-14 text-main">집업</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check4">
-                        <label for="check4"></label>
-                        <span class="ms-2 fs-14 text-main">맨투맨/후드</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check5">
-                        <label for="check5"></label>
-                        <span class="ms-2 fs-14 text-main">티셔츠</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check6">
-                        <label for="check6"></label>
-                        <span class="ms-2 fs-14 text-main">셔츠/블라우스</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check7">
-                        <label for="check7"></label>
-                        <span class="ms-2 fs-14 text-main">니트/스웨터/가디건</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check8">
-                        <label for="check8"></label>
-                        <span class="ms-2 fs-14 text-main">바지(Pants)</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check9">
-                        <label for="check9"></label>
-                        <span class="ms-2 fs-14 text-main">노벨티(기타)</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="py-1 border-bottom">
-                    <h4 class="fs-14 text-sub1">소재별</h4>
-                    <ul class="list-wrap">
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">면</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">폴리</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">나일론</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">레이온</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">린넨</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">아크릴</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">울(wool)</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">실크</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="py-1 border-bottom">
-                    <h4 class="fs-14 text-sub1">중량</h4>
-                    <ul class="list-wrap">
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">100g 이하</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">100g~200g</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">200g~300g</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">300g~400g</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">400g~500g</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">500g~600g</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">600g이상</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="py-1 border-bottom">
-                    <h4 class="fs-14 text-sub1">폭</h4>
-                    <ul class="list-wrap">
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">50인치 이하</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">50~60인치</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">60~70인치</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">70인치 이상</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="py-2 border-bottom">
-                    <h4 class="fs-14 text-sub1">원가별</h4>
-                    <ul class="list-wrap">
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">2,000원 이하</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">2,000원~4,000원</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">4,000원~6,000원</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">6,000원~8,000원</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">8,000원~10,000원</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">10,000원~15,000원</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">15,000원~20,000원</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">15,000원~20,000원</span>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                        <span class="ms-2 fs-14 text-main">20,000원 이상</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="py-1 border-bottom">
-                    <h4 class="fs-14 text-sub1">색상별</h4>
-                    <ul class="list-wrap">
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                      <li class="d-flex align-items-center mt-2">
-                        <input type="checkbox" id="check1">
-                        <label for="check1"></label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
             </div>
+            
           </nav>
 
         </div>
       </div>
-      
-      <nav class='nav2 border-bottom'>
+      <nav class='nav2 nav3 border-bottom'>
         <ul class="main-menu">
           <li><a class="btn-menu" href='#' title='원단 카테고리'>원단 카테고리 <i class="bar"></i></a></li>
           <li><a class="btn-menu" href='#' title='코트/자켓'>코트/자켓</a></li>
@@ -415,56 +145,63 @@
             <div class="sub sub1">
               <h4 class="text-muted fs-12 mb-1">니트류(다이마루)</h4>
               <ul class="fs-12">
-                <li><a class="btn-sub" href="#">저지</a></li>
-                <li><a class="btn-sub" href="#">후라이스</a></li>
-                <li><a class="btn-sub" href="#">테리</a></li>
-                <li><a class="btn-sub" href="#">쭈리</a></li>
-                <li><a class="btn-sub" href="#">뿐또</a></li>
-                <li><a class="btn-sub" href="#">피케이(PK)</a></li>
-                <li><a class="btn-sub" href="#">와플</a></li>
-                <li><a class="btn-sub" href="#">네오플랜</a></li>
+                <li><a class="btn-submenu" href="#">저지</a></li>
+                <li><a class="btn-submenu" href="#">후라이스</a></li>
+                <li><a class="btn-submenu" href="#">테리</a></li>
+                <li><a class="btn-submenu" href="#">쭈리</a></li>
+                <li><a class="btn-submenu" href="#">뿐또</a></li>
+                <li><a class="btn-submenu" href="#">피케이(PK)</a></li>
+                <li><a class="btn-submenu" href="#">와플</a></li>
+                <li><a class="btn-submenu" href="#">네오플랜</a></li>
               </ul>
             </div>
             <div class="sub sub2">
               <h4></h4>
               <ul class="fs-12 mt-3">
-                <li><a class="btn-sub" href="#">인터록</a></li>
-                <li><a class="btn-sub" href="#">담보루</a></li>
-                <li><a class="btn-sub" href="#">벨벳</a></li>
-                <li><a class="btn-sub" href="#">메쉬</a></li>
-                <li><a class="btn-sub" href="#">투웨이</a></li>
-                <li><a class="btn-sub" href="#">레이스</a></li>
-                <li><a class="btn-sub" href="#">RIP</a></li>
+                <li><a class="btn-submenu" href="#">인터록</a></li>
+                <li><a class="btn-submenu" href="#">담보루</a></li>
+                <li><a class="btn-submenu" href="#">벨벳</a></li>
+                <li><a class="btn-submenu" href="#">메쉬</a></li>
+                <li><a class="btn-submenu" href="#">투웨이</a></li>
+                <li><a class="btn-submenu" href="#">레이스</a></li>
+                <li><a class="btn-submenu" href="#">RIP</a></li>
               </ul>
             </div>
             <div class="sub sub3">
               <h4 class="text-muted fs-12 mb-1">우븐류(직기)</h4>
               <ul class="fs-12">
-                <li><a class="btn-sub" href="#">저지</a></li>
-                <li><a class="btn-sub" href="#">후라이스</a></li>
-                <li><a class="btn-sub" href="#">테리</a></li>
-                <li><a class="btn-sub" href="#">쭈리</a></li>
-                <li><a class="btn-sub" href="#">뿐또</a></li>
-                <li><a class="btn-sub" href="#">피케이(PK)</a></li>
-                <li><a class="btn-sub" href="#">와플</a></li>
-                <li><a class="btn-sub" href="#">네오플랜</a></li>
+                <li><a class="btn-submenu" href="#">저지</a></li>
+                <li><a class="btn-submenu" href="#">후라이스</a></li>
+                <li><a class="btn-submenu" href="#">테리</a></li>
+                <li><a class="btn-submenu" href="#">쭈리</a></li>
+                <li><a class="btn-submenu" href="#">뿐또</a></li>
+                <li><a class="btn-submenu" href="#">피케이(PK)</a></li>
+                <li><a class="btn-submenu" href="#">와플</a></li>
+                <li><a class="btn-submenu" href="#">네오플랜</a></li>
               </ul>
             </div>
             <div class="sub sub4">
               <h4></h4>
               <ul class="fs-12 mt-3">
-                <li><a class="btn-sub" href="#">인터록</a></li>
-                <li><a class="btn-sub" href="#">담보루</a></li>
-                <li><a class="btn-sub" href="#">벨벳</a></li>
-                <li><a class="btn-sub" href="#">메쉬</a></li>
-                <li><a class="btn-sub" href="#">투웨이</a></li>
-                <li><a class="btn-sub" href="#">레이스</a></li>
-                <li><a class="btn-sub" href="#">RIP</a></li>
+                <li><a class="btn-submenu" href="#">인터록</a></li>
+                <li><a class="btn-submenu" href="#">담보루</a></li>
+                <li><a class="btn-submenu" href="#">벨벳</a></li>
+                <li><a class="btn-submenu" href="#">메쉬</a></li>
+                <li><a class="btn-submenu" href="#">투웨이</a></li>
+                <li><a class="btn-submenu" href="#">레이스</a></li>
+                <li><a class="btn-submenu" href="#">RIP</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
+    </header>
+
+    <header class="header_mo">
+      <div class="inner d-flex align-items-center">
+        <a href="" class="logo"><img src="assets/images/logo.png"></a>
+        
+      </div>
     </header>
 
     <section class="cont container-fluid d-lg-flex d-block mt-10">
@@ -541,41 +278,48 @@
                 </div>
               </li>
             </ul>
-            <div class="select-wrap">
-              <select class="select-color w-100 p-1 text-sub4" name="" id="">
-                <option value="">색상</option>
-                <option value="">색상1</option>
-                <option value="">색상2</option>
-                <option value="">색상3</option>
-                <option value="">색상4</option>
-                <option value="">색상5</option>
-              </select>
-              <div class="mt-2 d-flex justify-content-between border-bottom2 pb-2">
-                <h4 class="fs-14 text-main">그레이</h4>
-                <div class="d-flex align-items-center">
-                  <div class="__count_range">
-                    <input value="-" count_range="m" type="button">
-                    <input class="count" value="1" readonly="" name="">
-                    <input value="+" count_range="p" type="button">
+            <div class="select-layer">
+              <div class="select-wrap bg-white pt-md-0 pt-4">
+                <select class="select-color w-100 p-1 text-sub4" name="" id="">
+                  <option value="">색상</option>
+                  <option value="">색상1</option>
+                  <option value="">색상2</option>
+                  <option value="">색상3</option>
+                  <option value="">색상4</option>
+                  <option value="">색상5</option>
+                </select>
+                <div class="mt-2 d-flex justify-content-between border-bottom2 pb-2">
+                  <h4 class="fs-14 text-main">그레이</h4>
+                  <div class="d-flex align-items-center">
+                    <div class="__count_range">
+                      <input value="-" count_range="m" type="button">
+                      <input class="count" value="1" readonly="" name="">
+                      <input value="+" count_range="p" type="button">
+                    </div>
+                    <span class="text-sub2 fs-14 ms-2">yard</span>
+                    <p class="text-main fs-14 fw-bold ms-4">12,800원</p>
+                    <button type="button"><img class="icon_20 ms-1" src="assets/images/icon/icon_close02.png"></button>
                   </div>
-                  <span class="text-sub2 fs-14 ms-2">yard</span>
-                  <p class="text-main fs-14 fw-bold ms-4">12,800원</p>
-                  <button type="button"><img class="icon_20 ms-1" src="assets/images/icon/icon_close02.png"></button>
+                  
                 </div>
-                
-              </div>
-              <div class="d-flex justify-content-end align-items-center mt-2">
-                <h4 class="fs-14 text-main">총 상품 금액</h4>
-                <span class="fs-20 text-sub3 fw-bold ms-2">99,999,999원</span>
-              </div>
-              <div class="d-flex gap-2 mt-2">
-                <button class=" p-1 btn_01" type="button">샘플 신청</button>
-                <button class=" p-1 btn_01" type="button">장바구니 담기</button>
-                <button class=" p-1 btn_02 flex-grow-1 text-white" type="button">바로 구매하기</button>
+                <div class="d-flex justify-content-end align-items-center mt-2">
+                  <h4 class="fs-14 text-main">총 상품 금액</h4>
+                  <span class="fs-20 text-sub3 fw-bold ms-2">99,999,999원</span>
+                </div>
+                <div class="d-flex gap-2 mt-2">
+                  <button class="p-1 btn_01" type="button">샘플 신청</button>
+                  <button class="p-1 btn_01" type="button">장바구니 담기</button>
+                  <button class="btn-buy p-1 btn_02 flex-grow-1 text-white" type="button">바로 구매하기</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="btn-buy-mo-wrap px-1 position-fixed w-100 bottom-0 start-0 mb-1 d-md-none d-block" >
+        <button type="button"
+          class="btn-buy-mo p-1 btn_02 text-white w-100"
+        >바로 구매하기</button>
       </div>
     </section>
     <section class="cont mt-5 mb-10 px-2">
@@ -607,8 +351,10 @@
               <div class="product-info">
                 <h3 class="title">
                   <a class="name" href="#">트월 선피치</a>
-                  <span class="hotdeal">HOTDEAL</span>
-                  <span class="new">NEW</span>
+                  <div class="d-flex label-wrap">
+                    <span class="hotdeal">HOTDEAL</span>
+                    <span class="new">NEW</span>
+                  </div>
                 </h3>
                 <span class="desc">포근한 피치 원단</span>
                 <div class="color">
@@ -635,8 +381,10 @@
               <div class="product-info">
                 <h3 class="title">
                   <a class="name" href="#">트월 선피치</a>
-                  <span class="hotdeal">HOTDEAL</span>
-                  <span class="new">NEW</span>
+                  <div class="d-flex label-wrap">
+                    <span class="hotdeal">HOTDEAL</span>
+                    <span class="new">NEW</span>
+                  </div>
                 </h3>
                 <span class="desc">포근한 피치 원단</span>
                 <div class="color">
@@ -663,8 +411,10 @@
               <div class="product-info">
                 <h3 class="title">
                   <a class="name" href="#">트월 선피치</a>
-                  <span class="hotdeal">HOTDEAL</span>
-                  <span class="new">NEW</span>
+                  <div class="d-flex label-wrap">
+                    <span class="hotdeal">HOTDEAL</span>
+                    <span class="new">NEW</span>
+                  </div>
                 </h3>
                 <span class="desc">포근한 피치 원단</span>
                 <div class="color">
@@ -691,8 +441,10 @@
               <div class="product-info">
                 <h3 class="title">
                   <a class="name" href="#">트월 선피치</a>
-                  <span class="hotdeal">HOTDEAL</span>
-                  <span class="new">NEW</span>
+                  <div class="d-flex label-wrap">
+                    <span class="hotdeal">HOTDEAL</span>
+                    <span class="new">NEW</span>
+                  </div>
                 </h3>
                 <span class="desc">포근한 피치 원단</span>
                 <div class="color">
@@ -709,145 +461,156 @@
             </div>
           </div>
         </div>
-        <!-- 리뷰 -->
+        
         <div class="row px-2">
-          <div class="d-flex justify-content-between align-items-center border-bottom pb-2 px-0">
-            <h3 class="fs-20 fw-bold">리뷰 530건</h3>
-            <div class="tab-review d-flex border px-2">
-              <button class="active pe-2" type="button">최신순</button>
-              <button class="pe-2" type="button">평점 높은순</button>
-              <button class="pe-2" type="button">평점 낮은 순</button>
+          <!-- 리뷰 -->
+          <div>
+            <div class="d-flex justify-content-between align-items-center border-bottom pb-2 px-0">
+              <h3 class="fs-20 fw-bold">리뷰 530건</h3>
+              <div class="tab-review d-flex">
+                <button class="fs-12 border border-right-0 active" type="button">최신순 <i class="bar"></i></button>
+                <button class="fs-12 border-top border-bottom" type="button">평점 높은순 <i class="bar"></i></button>
+                <button class="fs-12 border border-left-0" type="button">평점 낮은 순</button>
+              </div>
             </div>
-          </div>
-          <ul class="review-list-wrap">
-            <li class="py-2 border-bottom d-flex">
-              <div class="img-wrap">
-                <img src="">
-              </div>
-              <div class="desc ms-2">
-                <div class="d-flex">
-                  <div>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star" type="button"></button>
-                    <button class="star" type="button"></button>
-                  </div>
-                  <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
+            <ul class="review-list-wrap">
+              <li class="py-2 border-bottom d-flex">
+                <div class="img-wrap">
+                  <img src="">
                 </div>
-                <p class="lh-base fs-12 text-main mt-2">
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                </p>
-              </div>
-            </li>
-            <li class="py-2 border-bottom d-flex">
-              <div class="img-wrap">
-                <img src="">
-              </div>
-              <div class="desc ms-2">
-                <div class="d-flex">
-                  <div>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star" type="button"></button>
-                    <button class="star" type="button"></button>
+                <div class="desc ms-2">
+                  <div class="d-flex">
+                    <div>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star" type="button"></button>
+                      <button class="star" type="button"></button>
+                    </div>
+                    <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
                   </div>
-                  <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
+                  <p class="lh-base fs-12 text-main mt-2">
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  </p>
                 </div>
-                <p class="lh-base fs-12 text-main mt-2">
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                </p>
-              </div>
-            </li>
-            <li class="py-2 border-bottom d-flex">
-              <div class="img-wrap">
-                <img src="">
-              </div>
-              <div class="desc ms-2">
-                <div class="d-flex">
-                  <div>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star" type="button"></button>
-                    <button class="star" type="button"></button>
+              </li>
+              <li class="py-2 border-bottom d-flex">
+                <div class="img-wrap">
+                  <img src="">
+                </div>
+                <div class="desc ms-2">
+                  <div class="d-flex">
+                    <div>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star" type="button"></button>
+                      <button class="star" type="button"></button>
+                    </div>
+                    <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
                   </div>
-                  <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
+                  <p class="lh-base fs-12 text-main mt-2">
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  </p>
                 </div>
-                <p class="lh-base fs-12 text-main mt-2">
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                </p>
-              </div>
-            </li>
-            <li class="py-2 border-bottom d-flex">
-              <div class="img-wrap">
-                <img src="">
-              </div>
-              <div class="desc ms-2">
-                <div class="d-flex">
-                  <div>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star" type="button"></button>
-                    <button class="star" type="button"></button>
+              </li>
+              <li class="py-2 border-bottom d-flex">
+                <div class="img-wrap">
+                  <img src="">
+                </div>
+                <div class="desc ms-2">
+                  <div class="d-flex">
+                    <div>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star" type="button"></button>
+                      <button class="star" type="button"></button>
+                    </div>
+                    <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
                   </div>
-                  <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
+                  <p class="lh-base fs-12 text-main mt-2">
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  </p>
                 </div>
-                <p class="lh-base fs-12 text-main mt-2">
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                </p>
-              </div>
-            </li>
-            <li class="py-2 d-flex">
-              <div class="img-wrap">
-                <img src="">
-              </div>
-              <div class="desc ms-2">
-                <div class="d-flex">
-                  <div>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star active" type="button"></button>
-                    <button class="star" type="button"></button>
-                    <button class="star" type="button"></button>
+              </li>
+              <li class="py-2 border-bottom d-flex">
+                <div class="img-wrap">
+                  <img src="">
+                </div>
+                <div class="desc ms-2">
+                  <div class="d-flex">
+                    <div>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star" type="button"></button>
+                      <button class="star" type="button"></button>
+                    </div>
+                    <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
                   </div>
-                  <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
+                  <p class="lh-base fs-12 text-main mt-2">
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  </p>
                 </div>
-                <p class="lh-base fs-12 text-main mt-2">
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
-                </p>
-              </div>
-            </li>
-          </ul>
-          <div class="pagination">
-
+              </li>
+              <li class="py-2 d-flex">
+                <div class="img-wrap">
+                  <img src="">
+                </div>
+                <div class="desc ms-2">
+                  <div class="d-flex">
+                    <div>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star active" type="button"></button>
+                      <button class="star" type="button"></button>
+                      <button class="star" type="button"></button>
+                    </div>
+                    <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
+                  </div>
+                  <p class="lh-base fs-12 text-main mt-2">
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                    내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center mb-10">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_prev.png"></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_next.png"></a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
 
         </div> <!-- end row 리뷰 -->

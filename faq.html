@@ -1,376 +1,652 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="assets/css/custom.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <title>FAQ</title>
+    <link rel="stylesheet" href="assets/css/sharple.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/icon/favi.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/icon/favi.png" type="image/png">
+    <!-- jquery js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <title>샾플</title>
   </head>
   <body>
 
-
+  <div id="main_wrap" class="mypage_wrap mypage_main_wrap">
     <!-- header -->
-    <header class="header header-dark bg-dark header-sticky">
+    <header class="header">
       <div class="container">
-        <div class="row">
+        <div class="row position-relative">
           <nav class="navbar navbar-expand-lg navbar-dark">
-            <a href="index.html" class="navbar-brand order-1 order-lg-2"><img src="assets/images/logo.svg" alt="Logo"></a>
-            <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse order-3 order-lg-1" id="navbarMenu">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item dropdown megamenu">
-                  <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pages
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown-4">
-                    <div class="row">
-                      <ul class="col-6 col-md-3 col-lg-2">
-                        <li><span class="megamenu-title">Home</span></li>
-                        <li><a class="dropdown-item" href="index.html">Home - classic</a></li>
-                        <li><a class="dropdown-item" href="index-carousel.html">Home - carousel</a></li>
-                        <li><a class="dropdown-item" href="index-categories.html">Home - categories</a></li>
-                        <li><a class="dropdown-item" href="index-modern.html">Home - modern</a></li>
-                        <li><a class="dropdown-item" href="index-minimal.html">Home - minimal</a></li>
-                        <li><span class="megamenu-title">Shop</span></li>
-                        <li><a class="dropdown-item" href="listing-sidebar.html">Listing - sidebar</a></li>
-                        <li><a class="dropdown-item" href="listing-full.html">Listing - full width</a></li>
-                        <li><a class="dropdown-item" href="listing-masonry.html">Listing - masonry</a></li>
-                        <li><a class="dropdown-item" href="listing-modern.html">Listing - modern</a></li>
-                      </ul>
-                      <ul class="col-6 col-md-3 col-lg-2">
-                        <li><span class="megamenu-title">Product</span></li>
-                        <li><a class="dropdown-item" href="product-classic.html">Product - classic</a></li>
-                        <li><a class="dropdown-item" href="product-scroll.html">Product - scroll</a></li>
-                        <li><a class="dropdown-item" href="product-masonry.html">Product - masonry</a></li>
-                        <li><a class="dropdown-item" href="product-modern.html">Product - modern</a></li>
-                        <li><a class="dropdown-item" href="product-promo.html">Product - promo</a></li>
-                        <li><a class="dropdown-item" href="product-oos.html">Product - out of stock</a></li>
-                        <li><span class="megamenu-title">Order</span></li>
-                        <li><a class="dropdown-item" href="cart.html">Cart</a></li>
-                        <li><a class="dropdown-item" href="cart-full.html">Cart - full width</a></li>
-                        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                      </ul>
-                      <ul class="col-6 col-md-3 col-lg-2">
-                        <li><span class="megamenu-title">Account</span></li>
-                        <li><a class="dropdown-item" href="portal.html">Log In</a></li>
-                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                        <li><a class="dropdown-item" href="profile-orders.html">Orders</a></li>
-                        <li><a class="dropdown-item" href="profile-addresses.html">Addresses</a></li>
-                        <li><a class="dropdown-item" href="profile-payments.html">Payments</a></li>
-                        <li><a class="dropdown-item" href="profile-wishlist.html">Wishlist</a></li>
-                        <li><span class="megamenu-title">Blog</span></li>
-                        <li><a class="dropdown-item" href="blog-cards.html">Blog - cards</a></li>
-                        <li><a class="dropdown-item" href="blog-posts.html">Blog - posts</a></li>
-                        <li><a class="dropdown-item" href="post.html">Post</a></li>
-                      </ul>
-                      <ul class="col-6 col-md-3 col-lg-2">
-                        <li><span class="megamenu-title">Pages</span></li>
-                        <li><a class="dropdown-item" href="about.html">About</a></li>
-                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                        <li><a class="dropdown-item" href="text.html">Text Page</a></li>
-                        <li><a class="dropdown-item" href="404.html">404</a></li>
-                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-                        <li><span class="megamenu-title">Docs</span></li>
-                        <li><a class="dropdown-item" href="/documentation/index.html">Documentation</a></li>
-                        <li><a class="dropdown-item" href="/documentation/changelog.html">Changelog</a></li>
-                      </ul>
-                      <div class="col-lg-4">
-                        <div class="promo">
-                          <span class="image image-overlay" style="background-image: url(assets/images/background-3.jpg)"></span>
-                          <div class="promo-footer p-4 text-white">
-                            <h3 class="mb-0">New Collection</h3>
-                            <a href="#!" class="eyebrow underline text-white">Shop Now</a>
+            <a href="index.html" class="logo order-1 order-lg-2"><img src="assets/images/logo.png" alt="Logo"></a>
+            <div class="input_wrap collapse navbar-collapse order-3 order-lg-1">
+              <input class="input-search" type="text" placeholder="검색하기">
+            </div>
+            <div class="collapse navbar-collapse order-4 order-lg-3" id="navbarMenu2">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="#">마이페이지</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">장바구니</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn-recently" href="#">최근 본 상품</a>
+                </li>
+              </ul>
+              <div class="view-modal p-2 border border-top-0">
+                <div class="d-flex justify-content-between">
+                   <h4 class="fs-12 text-main fw-bold">최근 본 상품</h4>
+                   <button class="btn-view-close" type="button"><img class="icon_01" src="assets/images/icon/icon_close.png"></button>
+                </div>   
+                <div class="cont mt-2">
+                  <ul>
+                    <li class="d-flex">
+                      <div class="img-wrap">
+                        <img class="img-produt" src="">
+                      </div>
+                      <div class="info d-flex justify-content-between ms-3">
+                        <h5 class="fs-12 text-main">공동구매</h5>
+                        <div>
+                          <div class="d-flex">
+                            <h4 class="fs-14 text-main fw-bold">다이마루(초록)</h4>
+                            <span class="fs-12 text-muted ms-2">상품번호: 012C34</span>
                           </div>
+                          <p class="fs-12 text-muted">[옵션] 초록 (수량1), 노란색 (수량3)</p>
+                          
+                        </div>
+                      </div>
+                    </li>
+                    <li class="d-flex mt-1">
+                      <div class="img-wrap">
+                        <img class="img-produt" src="">
+                      </div>
+                      <div class="info d-flex justify-content-between ms-3">
+                        <h5 class="fs-12 text-main">공동구매</h5>
+                        <div>
+                          <div class="d-flex">
+                            <h4 class="fs-14 text-main fw-bold">다이마루(초록)</h4>
+                            <span class="fs-12 text-muted ms-2">상품번호: 012C34</span>
+                          </div>
+                          <p class="fs-12 text-muted">[옵션] 초록 (수량1), 노란색 (수량3)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="d-flex mt-1">
+                      <div class="img-wrap">
+                        <img class="img-produt" src="">
+                      </div>
+                      <div class="info d-flex justify-content-between ms-3">
+                        <h5 class="fs-12 text-main">공동구매</h5>
+                        <div>
+                          <div class="d-flex">
+                            <h4 class="fs-14 text-main fw-bold">다이마루(초록)</h4>
+                            <span class="fs-12 text-muted ms-2">상품번호: 012C34</span>
+                          </div>
+                          <p class="fs-12 text-muted">[옵션] 초록 (수량1), 노란색 (수량3)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="d-flex mt-1">
+                      <div class="img-wrap">
+                        <img class="img-produt" src="">
+                      </div>
+                      <div class="info d-flex justify-content-between ms-3">
+                        <h5 class="fs-12 text-main">공동구매</h5>
+                        <div>
+                          <div class="d-flex">
+                            <h4 class="fs-14 text-main fw-bold">다이마루(초록)</h4>
+                            <span class="fs-12 text-muted ms-2">상품번호: 012C34</span>
+                          </div>
+                          <p class="fs-12 text-muted">[옵션] 초록 (수량1), 노란색 (수량3)</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>            
+             </div>
+            </div>
+          </nav>
+          <nav class="nav-filter">
+            <div class="row d-flex justify-content-between flex-direction-start"> 
+              <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Logo"></a>
+              
+              <button class="btn-filter-close" type="button"></button>
+            </div>
+            <div class="filter-cont">
+              <div class="input_wrap d-flex gap-0 mb-2">
+                <input class="input-search" type="text" placeholder="검색하기">
+                <button class="btn-primary px-2" type="button">검색하기</button>
+              </div>
+                <div class="filter-wrap">
+                  <h3 class="fs-14 text-sub1">세부필터</h4>
+                  <div class="py-1 border-bottom">
+                    <h4 class="fs-14 text-sub1">용도별</h4>
+                    <ul class="list-wrap">
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">코트/자켓</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check2">
+                        <label for="check2"></label>
+                        <span class="ms-2 fs-14 text-main">점퍼/패딩</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check3">
+                        <label for="check3"></label>
+                        <span class="ms-2 fs-14 text-main">집업</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check4">
+                        <label for="check4"></label>
+                        <span class="ms-2 fs-14 text-main">맨투맨/후드</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check5">
+                        <label for="check5"></label>
+                        <span class="ms-2 fs-14 text-main">티셔츠</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check6">
+                        <label for="check6"></label>
+                        <span class="ms-2 fs-14 text-main">셔츠/블라우스</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check7">
+                        <label for="check7"></label>
+                        <span class="ms-2 fs-14 text-main">니트/스웨터/가디건</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check8">
+                        <label for="check8"></label>
+                        <span class="ms-2 fs-14 text-main">바지(Pants)</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check9">
+                        <label for="check9"></label>
+                        <span class="ms-2 fs-14 text-main">노벨티(기타)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="py-1 border-bottom">
+                    <h4 class="fs-14 text-sub1">소재별</h4>
+                    <ul class="list-wrap">
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">면</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">폴리</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">나일론</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">레이온</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">린넨</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">아크릴</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">울(wool)</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">실크</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="py-1 border-bottom">
+                    <h4 class="fs-14 text-sub1">중량</h4>
+                    <ul class="list-wrap">
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">100g 이하</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">100g~200g</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">200g~300g</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">300g~400g</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">400g~500g</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">500g~600g</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">600g이상</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="py-1 border-bottom">
+                    <h4 class="fs-14 text-sub1">폭</h4>
+                    <ul class="list-wrap">
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">50인치 이하</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">50~60인치</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">60~70인치</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">70인치 이상</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="py-2 border-bottom">
+                    <h4 class="fs-14 text-sub1">원가별</h4>
+                    <ul class="list-wrap">
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">2,000원 이하</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">2,000원~4,000원</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">4,000원~6,000원</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">6,000원~8,000원</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">8,000원~10,000원</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">10,000원~15,000원</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">15,000원~20,000원</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">15,000원~20,000원</span>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                        <span class="ms-2 fs-14 text-main">20,000원 이상</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="py-1 border-bottom">
+                    <h4 class="fs-14 text-sub1">색상별</h4>
+                    <ul class="list-wrap">
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                      <li class="d-flex align-items-center mt-2">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"></label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+      
+      <nav class='nav2 border-bottom'>
+        <ul class="main-menu">
+          <li><a class="btn-menu" href='#' title='원단 카테고리'>원단 카테고리 <i class="bar"></i></a></li>
+          <li><a class="btn-menu" href='#' title='코트/자켓'>코트/자켓</a></li>
+          <li><a class="btn-menu" href='#' title='점퍼/패딩'>점퍼/패딩</a></li>
+          <li><a class="btn-menu" href='#' title='짚업'>짚업</a></li>
+          <li><a class="btn-menu" href='#' title='맨투맨/후드'>맨투맨/후드</a></li>
+          <li><a class="btn-menu" href='#' title='티셔츠'>티셔츠</a></li>
+          <li><a class="btn-menu" href='#' title='셔츠/블라우스'>셔츠/블라우스</a></li>
+          <li><a class="btn-menu" href='#' title='니트/스웨터/가디건'>니트/스웨터/가디건</a></li>
+          <li><a class="btn-menu" href='#' title='바지'>바지</a></li>
+          <li><a class="btn-menu" href='#' title='원피스/스커트'>원피스/스커트</a></li>
+          <li><a class="btn-menu" href='#' title='기타'>기타</a></li>
+        </ul>
+        <div class="sub-menu border-bottom">
+          <div class="inner d-flex px-1 py-2">
+            <div class="sub sub1">
+              <h4 class="text-muted fs-12 mb-1">니트류(다이마루)</h4>
+              <ul class="fs-12">
+                <li><a class="btn-sub" href="#">저지</a></li>
+                <li><a class="btn-sub" href="#">후라이스</a></li>
+                <li><a class="btn-sub" href="#">테리</a></li>
+                <li><a class="btn-sub" href="#">쭈리</a></li>
+                <li><a class="btn-sub" href="#">뿐또</a></li>
+                <li><a class="btn-sub" href="#">피케이(PK)</a></li>
+                <li><a class="btn-sub" href="#">와플</a></li>
+                <li><a class="btn-sub" href="#">네오플랜</a></li>
+              </ul>
+            </div>
+            <div class="sub sub2">
+              <h4></h4>
+              <ul class="fs-12 mt-3">
+                <li><a class="btn-sub" href="#">인터록</a></li>
+                <li><a class="btn-sub" href="#">담보루</a></li>
+                <li><a class="btn-sub" href="#">벨벳</a></li>
+                <li><a class="btn-sub" href="#">메쉬</a></li>
+                <li><a class="btn-sub" href="#">투웨이</a></li>
+                <li><a class="btn-sub" href="#">레이스</a></li>
+                <li><a class="btn-sub" href="#">RIP</a></li>
+              </ul>
+            </div>
+            <div class="sub sub3">
+              <h4 class="text-muted fs-12 mb-1">우븐류(직기)</h4>
+              <ul class="fs-12">
+                <li><a class="btn-sub" href="#">저지</a></li>
+                <li><a class="btn-sub" href="#">후라이스</a></li>
+                <li><a class="btn-sub" href="#">테리</a></li>
+                <li><a class="btn-sub" href="#">쭈리</a></li>
+                <li><a class="btn-sub" href="#">뿐또</a></li>
+                <li><a class="btn-sub" href="#">피케이(PK)</a></li>
+                <li><a class="btn-sub" href="#">와플</a></li>
+                <li><a class="btn-sub" href="#">네오플랜</a></li>
+              </ul>
+            </div>
+            <div class="sub sub4">
+              <h4></h4>
+              <ul class="fs-12 mt-3">
+                <li><a class="btn-sub" href="#">인터록</a></li>
+                <li><a class="btn-sub" href="#">담보루</a></li>
+                <li><a class="btn-sub" href="#">벨벳</a></li>
+                <li><a class="btn-sub" href="#">메쉬</a></li>
+                <li><a class="btn-sub" href="#">투웨이</a></li>
+                <li><a class="btn-sub" href="#">레이스</a></li>
+                <li><a class="btn-sub" href="#">RIP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+   
+    <div class="cont-wrap d-flex justify-content-center mt-10">
+      <aside>
+        <div class="profile d-flex align-items-end mb-4">
+          <h3 class="fs-20 fw-bold text-main">김샾플</h3>
+          <span class="fs-12 text-white bg-04 padding-6 ms-1">VIP</span>
+          <span class="fs-12 text-main ms-1">고객님</span>
+        </div>
+        <div>
+          
+          <h4 class="fs-14 fw-bold text-main mb-1">주문관리</h4>
+          <ul>
+            <li><a href="#" class="d-block active">주문/배송 내역</a></li>
+            <li><a href="#" class="d-block">취소/반품/교환/환불 내역</a></li>
+            <li><a href="#" class="d-block">배송지 관리</a></li>
+            <li><a href="#" class="d-block">영수증 조회/출력</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fs-14 fw-bold text-main my-1">상품관리</h4>
+          <ul>
+            <li><a href="#" class="d-block">장바구니</a></li>
+            <li><a href="#" class="d-block">위시리스트</a></li>
+            <li><a href="#" class="d-block">상품평 관리</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fs-14 fw-bold text-main my-1">할인혜택</h4>
+          <ul>
+            <li><a href="#" class="d-block">쿠폰내역</a></li>
+            <li><a href="#" class="d-block">적립금내역</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fs-14 fw-bold text-main my-1">문의관리</h4>
+          <ul>
+            <li><a href="#" class="d-block">1:1 문의 신청</a></li>
+            <li><a href="#" class="d-block">1:1 문의 내역</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fs-14 fw-bold text-main my-1">설정</h4>
+          <ul>
+            <li><a href="#" class="d-block">회원정보관리</a></li>
+            <li><a href="#" class="d-block">로그아웃</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="cont">
+          
+          <!-- 문의 -->
+          <div class="row mx-0">
+            <div class="d-flex justify-content-between align-items-end mb-2 px-3">
+              <h3 class="fs-20 text-main fw-bold">FAQ</h3>
+              <div class="input_wrap_coupon d-md-flex d-none">
+                <h4 class="fs-14 d-flex align-items-center me-2">키워드로 빠른검색</h4>
+                <input class="input-search flex-grow-1 ps-2 fs-12 border" type="text" placeholder="검색어를 입력하세요.">
+                <button class="btn_04 px-1 text-white fs-12" type="button">검색</button>
+              </div>
+            </div>
+            <!-- tab -->
+            <div class="col-lg-12 px-md-3 px-0" style=" overflow-x: scroll;">
+              <div class="tab d-flex justify-content-between text-center border-bottom" id="sidebar-1" role="tablist" style="min-width: 500px;">
+                <a class="flex-grow-1 py-1 active" data-toggle="tab" href="#sidebar-1-1" role="tab"  aria-controls="sidebar-1" aria-selected="false">Essential+</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-2" role="tab" aria-controls="sidebar-1-2" aria-selected="false">주문/결제</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-3" role="tab" aria-controls="sidebar-1-3" aria-selected="false">배송</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="false">취소/교환/반품</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="false">회원/멤버십</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="false">쿠폰</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="false">적립금</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="false">영수증/세금계산서</a>
+                <a class="flex-grow-1 py-1" data-toggle="tab" href="#sidebar-1-4" role="tab" aria-controls="sidebar-1-4" aria-selected="false">기타</a>
+              </div>
+            </div>
+            <!-- / tab -->
+           
+            <div class="mypage-table-wrap1 p-0 mt-md-7 mt-0 mb-3 px-3">
+              <div class="thead d-md-flex d-none align-items-center border-top3 px-0 py-1 border-bottom">
+                <h5 class="text-main fs-12 fw-bold text-center w-15">번호</h5>
+                <p class="text-main fs-12 fw-bold text-center flex-grow-1">제목</p>
+              </div>
+              <ul class="list-wrap px-0 mb-0">
+                <li class="py-2 px-0 border-bottom">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="text-main fs-12 fw-bold text-center w-15 d-md-block d-none">29</p>
+                    <div class="d-flex justify-content-between flex-grow-1">
+                      <div class="d-flex align-items-center">
+                        <p class="fs-14 ">제목입니다. 20글자까지 들어갑니다.</p>
+                      </div>
+                      <div class="amount d-flex align-items-center">
+                        <div class="d-flex flex-column justify-content-end">
+                          <button class="d-flex justify-content-end fs-10" type="button"><img class="w16" src="assets/images/icon/arrow_down_gray.png" alt=""></button>
                         </div>
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="documentation/index.html">
-                    Docs
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="collapse navbar-collapse order-4 order-lg-3" id="navbarMenu2">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="portal.html">Log In</a>
-                </li>
-                <li class="nav-item">
-                  <a data-toggle="modal" data-target="#search" class="nav-link"><i class="icon-search"></i></a>
-                </li>
-                <li class="nav-item cart">
-                  <a data-toggle="modal" data-target="#cart" class="nav-link"><span>Cart</span><span>2</span></a>
+                  <div class="py-2 d-flex justify-content-between">
+                    <p class="text-main fs-12 fw-bold text-center w-15 d-md-block d-none" ></p>
+                    <p class="lh-base fs-12 text-main w-100 ps-md-3 ps-0" >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum eligendi aliquid odio nam maiores ea quod harum recusandae, dolor velit magni sed quae aperiam earum in quibusdam unde dolore.
+                    </p>
+                  </div>
                 </li>
               </ul>
             </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <!-- breadcrumbs -->
-    <section class="breadcrumbs separator-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">FAQ</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- hero -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>FAQ</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="bg-light">
-      <div class="container">
-        <div class="row gutter-2 gutter-md-4">
-          <div class="col-md-4 col-lg-3">
-            <h2 class="h3 mb-4 mb-mb-0">Order</h2>
-          </div>
-          <div class="col-md-8 col-lg-9">
-            <div class="accordion accordion-minimal" id="accordion-1">
-              <div class="card">
-                <div class="card-header" id="heading-1-1">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
-                      Can I add items to my order ?
-                    </button>
-                  </h2>
-                </div>
-
-                <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1" data-parent="#accordion-1">
-                  <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ut ipsam optio et doloribus aut, magnam repellendus nostrum earum consequatur. Sunt voluptate, aperiam voluptatum, rem vero deleniti veniam omnis ipsum.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading-1-2">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
-                      Can I cancel my order ?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2" data-parent="#accordion-1">
-                  <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint illo deleniti quod harum cupiditate asperiores molestias, enim quam fugit debitis, dolorem omnis tenetur veniam delectus non doloribus tempora, dignissimos.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading-1-3">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
-                      Can I change my address ?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3" data-parent="#accordion-1">
-                  <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corporis magni sit dolore nam modi beatae, inventore, dolor dolorem. Ad quo commodi assumenda voluptates illum porro adipisci in aliquid distinctio?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading-1-4">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-1-4" aria-expanded="false" aria-controls="collapse-1-4">
-                      Can I merge my orders ?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4" data-parent="#accordion-1">
-                  <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corporis magni sit dolore nam modi beatae, inventore, dolor dolorem. Ad quo commodi assumenda voluptates illum porro adipisci in aliquid distinctio?</p>
-                  </div>
-                </div>
-              </div>
+            <div class="d-flex justify-content-center mb-10">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_prev.png"></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_next.png"></a></li>
+                </ul>
+              </nav>
             </div>
-          </div>
-        </div>
+          </div>   <!-- end row 문의 -->    
       </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="row gutter-2 gutter-md-4">
-          <div class="col-md-4 col-lg-3">
-            <h2 class="h3 mb-4 mb-mb-0">Delivery</h2>
-          </div>
-          <div class="col-md-8 col-lg-9">
-            <div class="accordion accordion-minimal" id="accordion-2">
-              <div class="card">
-                <div class="card-header" id="heading-2-1">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
-                      Which carrier will deliver my order ?
-                    </button>
-                  </h2>
-                </div>
-
-                <div id="collapse-2-1" class="collapse" aria-labelledby="heading-2-1" data-parent="#accordion-2">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading-2-2">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
-                      Where is my order ?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse-2-2" class="collapse" aria-labelledby="heading-2-2" data-parent="#accordion-2">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading-2-3">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
-                      Will I have to pay some duties ?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse-2-3" class="collapse" aria-labelledby="heading-2-3" data-parent="#accordion-2">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-light">
-      <div class="container">
-        <div class="row gutter-2 gutter-md-4">
-          <div class="col-md-4 col-lg-3">
-            <h2 class="h3 mb-4 mb-mb-0">Returns</h2>
-          </div>
-          <div class="col-md-8 col-lg-9">
-            <div class="accordion accordion-minimal" id="accordion-3">
-              <div class="card">
-                <div class="card-header" id="heading-3-1">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-3-1" aria-expanded="false" aria-controls="collapse-3-1">
-                      I've received a wrong item
-                    </button>
-                  </h2>
-                </div>
-
-                <div id="collapse-3-1" class="collapse" aria-labelledby="heading-3-1" data-parent="#accordion-3">
-                  <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ut ipsam optio et doloribus aut, magnam repellendus nostrum earum consequatur. Sunt voluptate, aperiam voluptatum, rem vero deleniti veniam omnis ipsum.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading-3-2">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-3-2" aria-expanded="false" aria-controls="collapse-3-2">
-                      Can I excange my order ?
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapse-3-2" class="collapse" aria-labelledby="heading-3-2" data-parent="#accordion-3">
-                  <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur sint illo deleniti quod harum cupiditate asperiores molestias, enim quam fugit debitis, dolorem omnis tenetur veniam delectus non doloribus tempora, dignissimos.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    </div>
+  </div>
 
     <!-- footer -->
-    <footer class="bg-dark text-white py-0">
-      <div class="container">
-        <div class="row separated">
-          <div class="col-lg-6 py-10">
-            <div class="row">
-              <div class="col-md-8">
-                <p>Thanks to <a href="https://www.opumo.com" class="underline">Opumo</a> for the images used in this demo theme. Head over to <a href="https://www.opumo.com" class="underline">their store</a> to get these products.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-10">
-                <h4 class="eyebrow mb-2">Quick Links</h4>
-                <ul class="list-group list-group-columns">
-                  <li class="list-group-item"><a href="about.html">About</a></li>
-                  <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
-                  <li class="list-group-item"><a href="faq.html">FAQ</a></li>
-                  <li class="list-group-item"><a href="blog.html">Blog</a></li>
-                  <li class="list-group-item"><a href="text.html">Terms of Use</a></li>
-                </ul>
-              </div>
+    <footer class=" py-0">
+      <!-- <div class="container"> -->
+       <div class="link">
+        <ul>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">서비스 소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">제휴 문의</a></li>
+        </ul>
+       </div>
+       <div class="cont_wrap">
+        <div class="cont1">
+          <div class="bx1">
+            <address>
+              <p>(주) 웰텍 대표이사: 박진구</p>
+              <p>경기도 양주시 삼숭로134번길 18</p>
+              <p>통신판매업신고번호: 2000-경기양주-0000 </p>
+              <p>사업자등록번호: 000-00-00000</p>
+              <p>개인정보보호책임자: 박진구</p>
+            </address>
+            <div class="icon_wrap">
+              <a href="#"><img src="assets/images/icon/icon_facebook.png"></a>
+              <a href="#"><img src="assets/images/icon/icon_instagram.png"></a>
+              <a href="#"><img src="assets/images/icon/icon_youtube.png"></a>
             </div>
           </div>
-          <div class="col-lg-6 py-10">
-            <div class="row justify-content-end">
-              <div class="col-lg-10">
-                <h4 class="eyebrow mb-2">Subscribe</h4>
-                <div class="input-group">
-                  <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Subscribe" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-white" type="button" id="button-addon2">Subscribe</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-end">
-              <div class="col-lg-10">
-                <h4 class="eyebrow mb-2">Follow us</h4>
-                <nav class="nav nav-icons">
-                  <a class="nav-link" href="#!"><i class="icon-facebook-o"></i></a>
-                  <a class="nav-link" href="#!"><i class="icon-twitter-o"></i></a>
-                  <a class="nav-link" href="#!"><i class="icon-youtube-o"></i></a>
-                </nav>
-              </div>
-            </div>
+          <div class="bx2">
+            <a href="#" class="logo"><img src="assets/images/logo2.png" alt="logo"></a>
+          </div>
+          <div class="bx3">
+            <ul>
+              <li>고객센터: 031-846-4081 </li>
+              <li>평일: 09시-18시 </li>
+              <li>점심 12시-13시 </li>
+              <li>주말/공휴일 휴무 </li>
+            </ul>
+            <ul>
+              <li><a href="#">이용약관</a> </li>
+              <li><a href="#">개인정보처리방침</a> </li>
+              <li><a href="#">결제정책</a> </li>
+              <li><a href="#">배송 정책</a> </li>
+              <li><a href="#">마케팅 약관</a> </li>
+            </ul>
           </div>
         </div>
-      </div>
+        <div class="cont2">
+          <div class="bx1">
+            <p>이메일 문의</p>
+            <a href="#">Sharple_cs@gmail.com</a>
+          </div>
+          <div class="bx2">
+            <p></p>
+            <p>Copyright© 2023, Sharple</p>
+          </div>
+        </div>
+       </div>
+      <!-- </div> -->
     </footer>
-
 
     <!-- cart -->
     <div class="modal fade sidebar" id="cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
@@ -476,9 +752,20 @@
       </div>
     </div>
 
+<script>
 
+$('.product-image').each(function() {
+    var $this = $(this);
+    $this.mouseenter(function() {
+        $this.find('.img_product').addClass('active');
+        $this.find('.img_hover').removeClass('active'); // 이미지 숨기기
+    });
+});
+
+</script>
 
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/common.js"></script>
   </body>
 </html>

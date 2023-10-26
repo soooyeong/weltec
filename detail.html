@@ -610,7 +610,7 @@
                   <p>실두께(번수)</p>
                 </div>
               </li>
-              <li class="d-flex  py-2">
+              <li class="d-flex py-2">
                 <h4 class="fs-14 text-main fw-bold me-5">배송정보</h4>
                 <div class="text-sub4 fs-14">
                   <p class="mb-1">무료배송</p>
@@ -624,48 +624,57 @@
                 </div>
               </li>
             </ul>
-            <div class="select-wrap">
-              <select class="select-color w-100 p-1 text-sub4" name="" id="">
-                <option value="">색상</option>
-                <option value="">색상1</option>
-                <option value="">색상2</option>
-                <option value="">색상3</option>
-                <option value="">색상4</option>
-                <option value="">색상5</option>
-              </select>
-              <div class="mt-2 d-flex justify-content-between border-bottom2 pb-2">
-                <h4 class="fs-14 text-main">그레이</h4>
-                <div class="d-flex align-items-center">
-                  <div class="__count_range">
-                    <input value="-" count_range="m" type="button">
-                    <input class="count" value="1" readonly="" name="">
-                    <input value="+" count_range="p" type="button">
+            <div class="select-layer">
+              <div class="select-wrap bg-white pt-md-0 pt-4">
+                <select class="select-color w-100 p-1 text-sub4" name="" id="">
+                  <option value="">색상</option>
+                  <option value="">색상1</option>
+                  <option value="">색상2</option>
+                  <option value="">색상3</option>
+                  <option value="">색상4</option>
+                  <option value="">색상5</option>
+                </select>
+                <div class="mt-2 d-flex justify-content-between border-bottom2 pb-2">
+                  <h4 class="fs-14 text-main">그레이</h4>
+                  <div class="d-flex align-items-center">
+                    <div class="__count_range">
+                      <input value="-" count_range="m" type="button">
+                      <input class="count" value="1" readonly="" name="">
+                      <input value="+" count_range="p" type="button">
+                    </div>
+                    <span class="text-sub2 fs-14 ms-2">yard</span>
+                    <p class="text-main fs-14 fw-bold ms-4">12,800원</p>
+                    <button type="button"><img class="icon_20 ms-1" src="assets/images/icon/icon_close02.png"></button>
                   </div>
-                  <span class="text-sub2 fs-14 ms-2">yard</span>
-                  <p class="text-main fs-14 fw-bold ms-4">12,800원</p>
-                  <button type="button"><img class="icon_20 ms-1" src="assets/images/icon/icon_close02.png"></button>
+                  
                 </div>
-                
-              </div>
-              <div class="d-flex justify-content-end align-items-center mt-2">
-                <h4 class="fs-14 text-main">총 상품 금액</h4>
-                <span class="fs-20 text-sub3 fw-bold ms-2">99,999,999원</span>
-              </div>
-              <div class="d-flex gap-2 mt-2">
-                <button class=" p-1 btn_01" type="button">샘플 신청</button>
-                <button class=" p-1 btn_01" type="button">장바구니 담기</button>
-                <button class=" p-1 btn_02 flex-grow-1 text-white" type="button">바로 구매하기</button>
+                <div class="d-flex justify-content-end align-items-center mt-2">
+                  <h4 class="fs-14 text-main">총 상품 금액</h4>
+                  <span class="fs-20 text-sub3 fw-bold ms-2">99,999,999원</span>
+                </div>
+                <div class="d-flex gap-2 mt-2">
+                  <button class="p-1 btn_01" type="button">샘플 신청</button>
+                  <button class="p-1 btn_01" type="button">장바구니 담기</button>
+                  <button class="btn-buy p-1 btn_02 flex-grow-1 text-white" type="button">바로 구매하기</button>
+                </div>
               </div>
             </div>
+            
           </div>
+          
         </div>
+      </div>
+      <div class="btn-buy-mo-wrap px-1 position-fixed w-100 bottom-0 start-0 mb-1 d-md-none d-block" >
+        <button type="button"
+          class="btn-buy-mo p-1 btn_02 text-white w-100"
+        >바로 구매하기</button>
       </div>
     </section>
     <section class="cont mt-5 mb-10 px-2">
       <div class="d-flex tab-wrap border-bottom">
-        <a class="flex-fill text-center py-2 active" href="#">상품 설명</a>
-        <a class="flex-fill text-center py-2" href="#">리뷰</a>
-        <a class="flex-fill text-center py-2" href="#">문의</a>
+        <a class="flex-fill text-center py-md-2 py-1 active" href="#">상품 설명</a>
+        <a class="flex-fill text-center py-md-2 py-1" href="#">리뷰</a>
+        <a class="flex-fill text-center py-md-2 py-1" href="#">문의</a>
       </div>
       <div class="content-fluid ">
         <div class="py-3">
@@ -676,7 +685,7 @@
           <img src="assets/images/product_hover.jpg">
         </div>
       </div>
-      <div class="row">
+      <div class="row position-relative" style="z-index: -1;">
         <h3 class="fs-20 fw-bold mb-2">관련 상품</h3>
         <div class="row">
           <div class="col-6 col-lg-3">
@@ -800,20 +809,48 @@
             </div>
           </div>
         </div>
+
+      </div>
+      <div class="row mt-md-10 mt-2 px-0">
         <!-- 리뷰 -->
-        <div class="px-2">
+        <div>
           <div class="d-flex justify-content-between align-items-center border-bottom pb-2 px-0">
             <h3 class="fs-20 fw-bold">리뷰 530건</h3>
-            <div class="tab-review d-flex border px-2">
-              <button class="active pe-2" type="button">최신순</button>
-              <button class="pe-2" type="button">평점 높은순</button>
-              <button class="pe-2" type="button">평점 낮은 순</button>
+            <div class="tab-review d-flex">
+              <button class="fs-12 border border-right-0 active" type="button">최신순 <i class="bar"></i></button>
+              <button class="fs-12 border-top border-bottom" type="button">평점 높은순 <i class="bar"></i></button>
+              <button class="fs-12 border border-left-0" type="button">평점 낮은 순</button>
             </div>
           </div>
           <ul class="review-list-wrap">
             <li class="py-2 border-bottom d-flex">
               <div class="img-wrap">
-                <img src="">
+                <img src="assets/images/banner/banner_main_01.jpg">
+              </div>
+              <div class="desc ms-2">
+                <div class="d-flex">
+                  <div class="star_wrap">
+                    <button class="star active" type="button"></button>
+                    <button class="star active" type="button"></button>
+                    <button class="star active" type="button"></button>
+                    <button class="star" type="button"></button>
+                    <button class="star" type="button"></button>
+                  </div>
+                  <h4 class="fs-14 text-main ms-3 fw-medium">ban****</h4>
+                </div>
+                <p class="lh-base fs-12 text-main mt-2">
+                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                  내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대로 들어가면 이정도가 들어갑니다. 내용이 들어갑니다. 내용이 들어가는데 최대
+                </p>
+              </div>
+            </li>
+            <li class="py-2 border-bottom d-flex">
+              <div class="img-wrap">
+                <!-- <img src="assets/images/banner/banner_main_01.jpg"> -->
               </div>
               <div class="desc ms-2">
                 <div class="d-flex">
@@ -837,13 +874,21 @@
               </div>
             </li>
           </ul>
-          <div class="pagination">
-
+          <div class="d-flex justify-content-center mb-10">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_prev.png"></a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_next.png"></a></li>
+              </ul>
+            </nav>
           </div>
 
         </div> <!-- end row 리뷰 -->
         <!-- 문의 -->
-        <div class="row px-2">
+        <div >
           <div class="d-flex justify-content-between align-items-center border-bottom2 pb-2 px-0">
             <h3 class="fs-20 fw-bold">문의</h3>
             <div>
@@ -873,9 +918,24 @@
               <span class="fs-12 text-sub4"> 2023.9.3 </span>
             </li>
           </ul>
+          <div class="d-flex justify-content-center mb-10">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_prev.png"></a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#"><img src="assets/images/icon/arrow_next.png"></a></li>
+              </ul>
+            </nav>
+          </div>
         </div>   <!-- end row 문의 -->    
+
       </div>
     </section>
+
+
+
   </div>
   <nav class="nav_mo scroll-y">
     <div class="nav_mo_header d-flex align-items-center bg-white">

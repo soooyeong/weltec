@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/custom.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/sharple.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
     <!-- slick css -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
@@ -464,7 +465,7 @@
       </nav>
     </header>
    
-    <div class="cont d-flex justify-content-center mt-10">
+    <div class="cont-wrap d-flex justify-content-center mt-10">
       <aside>
         <div class="profile d-flex align-items-end mb-4">
           <h3 class="fs-20 fw-bold text-main">김샾플</h3>
@@ -514,55 +515,55 @@
       <div class="cont2 ">
           
           <!-- 문의 -->
-          <div class="row px-3 mb-10">
-            <div class="d-flex align-items-end px-0 pb-1 border-bottom3">
+          <div class="member-info-cont row px-3 mb-10">
+            <div class="title d-flex align-items-end px-0 pb-1 border-bottom3">
               <h3 class="fs-20 text-main fw-bold text-start">회원정보 수정</h3>
             </div>
-            <div class="member_info_wrap2">
-              <div class="input_wrap px-0 pt-4 pb-2 ">
+            <div class="member_info_wrap2 px-0">
+              <div class="input_wrap px-0 pt-md-4 pt-2 pb-2 ">
                 <div class="d-flex align-items-center">
                   <h5 class="w95 fs-12 fw-bold">아이디(이메일)</h5>
                   <div class="ps-3 flex-grow-1">
-                    <input class="border p-1 w-100" type="text" placeholder="아이디(이메일)를 입력해 주세요.">
+                    <input class="input-search border p-1 w-100" type="text" placeholder="아이디(이메일)를 입력해 주세요.">
                   </div>
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <h5 class="w95 fs-12 fw-bold">이름</h5>
                   <div class="ps-3 flex-grow-1">
-                    <input class="border p-1 w-100" type="text" placeholder="이름을 입력해 주세요.">
+                    <input class="input-search border p-1 w-100" type="text" placeholder="이름을 입력해 주세요.">
                   </div>
                 </div>
                 <div class="d-flex align-items-center mt-2">
                   <h5 class="w95 fs-12 fw-bold">휴대폰번호</h5>
                   <div class="ps-3 flex-grow-1">
-                    <input class="border p-1 w-100" type="text" placeholder="휴대폰번호를 입력해 주세요.">
+                    <input class="input-search border p-1 w-100" type="text" placeholder="휴대폰번호를 입력해 주세요.">
                   </div>
                 </div>
                 <div class="mt-3 px-0">
                   <button class="d-block mx-auto btn_04 text-white fs-16"type="button">회원정보 변경</button>
                 </div>
               </div>
-              <div class="d-flex align-items-end px-0 pb-1 border-bottom3">
+              <div class="title d-flex align-items-end px-0 pb-1 border-bottom3">
                 <h3 class="fs-20 text-main fw-bold text-start">비밀번호 변경</h3>
               </div>
               <div class="member_info_wrap2">
-                <div class="input_wrap px-0 pt-4 pb-2 ">
+                <div class="input_wrap px-0 pt-md-4 pt-2 pb-2 ">
                   <div class="d-flex align-items-center">
                     <h5 class="w95 fs-12 fw-bold">현재 비밀번호</h5>
                     <div class="ps-3 flex-grow-1">
-                      <input class="border p-1 w-100" type="password" placeholder="아이디(이메일)를 입력해 주세요.">
+                      <input class="input-search border p-1 w-100" type="password" placeholder="현재 비밀번호를 입력해 주세요.">
                     </div>
                   </div>
                   <div class="d-flex align-items-center mt-2">
                     <h5 class="w95 fs-12 fw-bold">새 비밀번호</h5>
                     <div class="ps-3 flex-grow-1">
-                      <input class="border p-1 w-100" type="password" placeholder="이름을 입력해 주세요.">
+                      <input class="input-search border p-1 w-100" type="password" placeholder="새 비밀번호를 입력해 주세요.">
                     </div>
                   </div>
                   <div class="d-flex align-items-center mt-2">
                     <h5 class="w95 fs-12 fw-bold">비밀번호 확인</h5>
                     <div class="ps-3 flex-grow-1">
-                      <input class="border p-1 w-100" type="password" placeholder="휴대폰번호를 입력해 주세요.">
+                      <input class="input-search border p-1 w-100" type="password" placeholder="새 비밀번호를 다시 입력해 주세요.">
                     </div>
                   </div>
                   <div class="mt-3 px-0">
@@ -570,19 +571,52 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex align-items-end px-0 pb-1 border-bottom3">
+              <div class="title d-flex align-items-end px-0 pb-1 border-bottom3">
                 <h3 class="fs-20 text-main fw-bold text-start">수신설정</h3>
               </div>
               <div class="member_info_wrap2 border-bottom">
-                <div class="input_wrap px-0 pt-4 pb-2 ">
+                <div class="px-0 pt-md-4 pt-2 pb-2 ">
+                  <div class="form-check text-md-center text-start">
+                    <input class="form-check-input" type="checkbox" value="1" id="chk_terms1">
+                    <label class="form-check-label fs-12 text-main" for="chk_terms1">
+                      마케팅 및 이벤트 목적의 개인정보 수집 및 이용 동의함
+                    </label>
+                    <a class="fs-12 text-main fw-bold text-decoration-underline ms-2"  href="#">내용확인</a>
+                  </div>
+                  <div class="form-check mt-md-2 mt-0 text-md-center text-start">
+                    <input class="form-check-input" type="checkbox" value="1" id="chk_terms2">
+                    <label class="form-check-label fs-12 text-main" for="chk_terms2">
+                      광고성 정보 수신 동의함
+                    </label>
+                    <a class="fs-12 text-main fw-bold text-decoration-underline ms-2"  href="#">내용확인</a>
+                  </div>
+                  <div class="d-flex justify-content-md-center justify-content-start mt-md-2 mt-0">
+                    <div class="form-check text-md-center text-start">
+                      <input class="form-check-input" type="checkbox" value="1" id="chk_terms3">
+                      <label class="form-check-label fs-12 text-main" for="chk_terms3">
+                        SNS
+                      </label>
+                    </div>
+                    <div class="form-check text-md-center text-start ms-3">
+                      <input class="form-check-input" type="checkbox" value="1" id="chk_terms4">
+                      <label class="form-check-label fs-12 text-main" for="chk_terms4">
+                        이메일
+                      </label>
+                    </div>
+                  </div>
                   
-                  
-                  <div class="mt-3 px-0">
+                  <div class="mt-1 px-0">
                     <p class="fs-12 text-sub4 text-center">위 항목을 모두 동의하셔야 샾플의 맞춤형 쇼핑혜택(광고)을 받으실 수 있습니다.</p>
+                  </div>
+                  <div class="input_wrap mt-3 px-0">
+                    <button class="d-block mx-auto btn_04 text-white fs-16"type="button">저장하기</button>
                   </div>
                 </div>
               </div>
-              <p class="fs-12 text-sub4 text-end pt-1">탈퇴를 원하시면 우측의 회원탈퇴 버튼을 눌러주세요.</p>
+              <div class="d-flex justify-content-end">
+                <p class="fs-12 text-sub4 text-end pt-1">탈퇴를 원하시면 우측의 회원탈퇴 버튼을 눌러주세요.</p>
+                <button class="fs-12 fw-bold text-sub4 mt-1 ms-2" type="button">회원탈퇴</button>
+              </div>
           </div>   <!-- end row 문의 -->    
       </div>
     </div>
